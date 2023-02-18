@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="signup_Section">
+    <div id="img_center">
+
+    </div>
+    <!----details section-->
+ 
+    <div id="details_section">
+
+        <!----register section-->
+        <section id="Register" class="sections active">
+            <h1 id="registration_title">PlagChecker</h1>
+            <p class="title">Register your details</p>
+
+
+            <div id="btn_container">
+                <button class="signup_btn active" id="register" data-id="Register"> Register</button>
+                <button class="signup_btn" id="login" data-id="Login">Login</button>
+            </div>
+            <input type="text" name="fullName" placeholder="Full Name" />
+            <input type="text" name="email_address" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+            <input type="number" name="phoneNumber" placeholder="Phone Number" />
+            <button type="submit" value="Submit" class="signup_btn" id="login_btn">Create Account</button>
+
+
+    </div>
+    </section>
+    <!----login section-->
+    <section id="Login" class="sections">
+        <h1 id="registration_title">PlagChecker</h1>
+        <p class="title">Login</p>
+
+        <div id="btn_container">
+            <button class="signup_btn active" id="register" data-id="Register"> Register</button>
+            <button class="signup_btn" id="login" data-id="Login">Login</button>
+        </div>
+
+        <input type="text" name="fullName" placeholder="Full Name" />
+        <input type="text" name="email_address" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="number" name="phoneNumber" placeholder="Phone Number" />
+        <button type="submit" value="Submit" class="signup_btn" id="login_btn">Log In</button>
+
+
+        </div>
+    </section>
+</div>
+
+</body>
+
+<script>
+    let details_section = document.getElementById("details_section");
+    let sections = document.querySelectorAll(".sections");
+    let signup_btn = document.querySelectorAll(".signup_btn");
+
+
+    details_section.addEventListener("click", function (e) {
+        let btn_id = e.target.dataset.id;
+
+        if(btn_id){
+
+        signup_btn.forEach((signUp)=> {
+            signUp.classList.remove("active")
+           
+        })
+        
+        e.target.classList.add("active");
+
+        
+
+        sections.forEach((section)=> {
+            section.classList.remove("active");
+         })
+       
+        }
+
+        let elements = document.getElementById(btn_id);
+         elements.classList.add("active");
+
+
+    })
+</script>
+
+</html>

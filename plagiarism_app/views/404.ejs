@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav id="navigation">
+        <div id="navigation_body" >
+            <div id="navigation_logo">
+                PlagChecker
+            </div>
+            <div id="navigation_links">
+                <ul>
+                    <li>Home</li>
+                    <li>Nightmode</li>
+                    <li>Log In</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <main >
+   <h1>404 Error</h1>
+       
+      
+  </main>
+  <script>
+
+    let navigationBox = document.querySelector("#navigation_body");
+    let unordered_links = document.querySelector("ul");
+    window.addEventListener("scroll", function(){
+        console.log("scrolled");
+    let navigationObject = navigationBox.getBoundingClientRect().height;
+    console.log(navigationObject)
+    let scrollPosition = window.pageYOffset;
+    console.log(scrollPosition)
+
+    if(scrollPosition > navigationObject){
+      
+        console.log("tee")
+        navigationBox.classList.add("newNav");
+        console.log(navigationBox)
+    }else{
+        navigationBox.classList.remove("newNav")
+    }
+
+
+
+
+    })
+
+  </script>
+</body>
+<footer>
+
+</footer>
+</html>

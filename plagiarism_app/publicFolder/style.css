@@ -1,0 +1,221 @@
+*{
+   box-sizing: border-box;
+   margin : 0rem;
+}
+
+
+
+
+#signup_Section{
+    display: flex;
+    width: 100%;
+    
+}
+#img_center{
+    flex-grow: 10px;
+    background-color: #823BF5;
+    width:700px;
+    height: 800px;
+
+
+}
+#details_section{
+    background-color: white;
+   
+    
+    margin: 4rem;
+
+}
+
+
+input {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px #D1CED6 solid;
+    margin-top: 30px;
+    width: 300px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    
+}
+
+input::placeholder{
+    padding-top: 10px;
+}
+
+#registration_title{
+    font-size: 40px;
+    color:#823BF5;
+    margin-bottom: 20px;
+}
+
+.signup_btn{
+    display:flex;
+    padding: .5rem;
+    background-color: white;
+    color: black;
+    
+    border: .8px solid #c19bff;
+    cursor: pointer;
+    font-size: 15px;
+  
+}
+
+.signup_btn:nth-child(1){
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.signup_btn:nth-child(2){
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.signup_btn.active{
+    background-color: #a576f3;
+    
+}
+
+
+
+.sections{
+    display: none;
+    
+}
+
+.sections.active{
+    display: block;
+    margin: 4rem;
+
+}
+
+.title{
+    color: #a576f3;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#login_btn{
+    margin-top: 30px;
+}
+
+#btn_container{
+    display: flex;
+    width: 60%
+}
+ 
+#navigation{
+    width: 100%;
+    background-color: #decdfa;
+}
+
+#navigation_body{
+    padding: 1rem;
+   display:flex;
+
+}
+
+#navigation_links{
+    
+    
+    justify-content: flex-end;
+    margin-left:44rem;
+    flex-direction: row;
+    width: 30%;
+    
+    
+}
+
+ul{
+    display:flex;
+}
+
+li{
+  padding: .4rem;
+    list-style: none;
+   cursor: pointer; 
+
+}
+#title{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+#text{
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 20px;
+}
+.backgrounds{
+    width: 100%;
+    height: 350px;
+    
+}
+
+#first_background{
+    background-color: #823BF5;
+}
+#second_background{
+    background-color: #c19bff;
+   
+}
+
+
+
+main {
+    position: relative;
+}
+
+#inputText{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 30px;
+    background-color: rgb(243, 223, 247);
+    border-radius: 4px;
+    padding: .6rem;
+    
+
+}
+
+#button_containers {
+    width: 100%;
+    padding: 10px 25rem;
+    display: flex;
+    position: absolute;
+   
+    background-color: #c19bff;
+    margin-top: -30px;
+
+    
+
+
+}
+
+.buttons{
+    padding: .6rem; 
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+   background-color: #823BF5;
+   border: none;
+
+ 
+}
+
+.buttons:nth-child(1){
+    margin-right: 30px;
+}
+
+
+.newNav {
+
+    background-color: green;
+    color: white;
+    position: fixed;
+    width: 100%;
+  z-index: 1;
+}
